@@ -21,9 +21,7 @@ async function postSignup(req, res) {
   }
 
   const result = await connection.query(
-    `  
-  SELECT * FROM users WHERE email = $1 
-  `,
+    `SELECT * FROM users WHERE email = $1`,
     [email]
   );
 
@@ -34,9 +32,7 @@ async function postSignup(req, res) {
   try {
     const passwordHash = bcrypt.hashSync(password, 11);
     await connection.query(
-      `INSERT INTO users
-        (name, email, password) 
-        VALUES ($1, $2, $3)`,
+      `INSERT INTO users (name, email, password) VALUES ($1, $2, $3)`,
       [name, email, passwordHash]
     );
     return res.sendStatus(201);
