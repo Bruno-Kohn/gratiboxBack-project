@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
   res.sendStatus(200);
 });
 
-//Access control
+// Access control
 app.post('/signup', postSignup);
 
 export default app;
