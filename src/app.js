@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import postSignup from './controllers/signup.js';
+import postLogin from './controllers/login.js';
 
 const app = express();
 app.use(express.json());
@@ -12,5 +13,6 @@ app.get('/health', (req, res) => {
 
 // Access control
 app.post('/signup', postSignup);
+app.post('/login', postLogin);
 
 export default app;

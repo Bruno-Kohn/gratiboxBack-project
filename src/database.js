@@ -23,3 +23,5 @@ if (process.env.NODE_ENV === 'prod') {
 const connection = new Pool(config);
 
 export default connection;
+
+// Colocar connectionString para rodar o Heroku
