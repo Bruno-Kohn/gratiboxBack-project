@@ -20,6 +20,6 @@ if (process.env.NODE_ENV === 'prod') {
   };
 }
 
-const pool = new Pool(config);
+const connection = new Pool(config);
 
-export default pool;
+export default connection;
