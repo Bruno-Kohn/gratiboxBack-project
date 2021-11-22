@@ -1,28 +1,3 @@
-# template-nodejs
-
-## Motivação
-
-Esse template diminui a burocracia de criar um server Node.js/Express, possuindo a maior parte das configurações inicias já feitas. O template segue os padrões de projetos da Driven Education.
-
-## Dependencias
-
-### Produção
-- express
-- pg 
-- cors
-- dotenv
-- jest 
-- babel-jest
-- supertest
-- bcrypt
-- uuid
-- joi
-
-### Dev
-- eslint (airbnb base)
-- husky
-- nodemon
-- faker
 
 ## Como usar?
 
