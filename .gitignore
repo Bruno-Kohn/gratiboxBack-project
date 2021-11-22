@@ -1,5 +1,8 @@
-node_modules
+# dependencies
+/node_modules
+.vscode
+
+#misc 
 .env
 .env.dev
 .env.test
-.vscode
